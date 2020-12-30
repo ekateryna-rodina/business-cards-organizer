@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://dbKarie:deftonessoad159753!@cluster0.lya9x.mongodb.net/businessCardsDB?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
+}
