@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import CardContext from "../../context/card/cardContext";
 
 const CardItem = ({ card }) => {
-  const { id, name, email, phone, type } = card;
+  const { _id, name, email, phone, type } = card;
   const cardContext = useContext(CardContext);
   const { deleteCard, setCurrent, clearCurrent } = cardContext;
   const onDelete = () => {
-    deleteCard(id);
+    deleteCard(_id);
     clearCurrent(card);
   };
   const onEdit = () => {

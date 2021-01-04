@@ -44,13 +44,17 @@ router.post(
 
       // check if user exists
       if (!user) {
-        return res.status(400).json({ msg: "User is not registered" });
+        return res
+          .status(400)
+          .json({ errors: [{ msg: "User is not registered" }] });
       }
 
       // check if password is valid
       const isMatch = await bcrypt.compare(password, user.password);
       if (!isMatch) {
-        return res.status(400).json({ msg: "Password does not match" });
+        return res
+          .status(400)
+          .json({ errors: [{ msg: "Password does not match" }] });
       }
 
       // jwt

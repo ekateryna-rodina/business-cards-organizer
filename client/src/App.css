@@ -48,6 +48,15 @@ img {
   padding: 0 2rem;
 }
 
+.form-container {
+  background-color: var(--dark-color);
+  border: var(--dark-color) 1px inset;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  max-width: 500px;
+}
+
 /* Text Styles*/
 .x-large {
   font-size: 4rem;
@@ -76,6 +85,10 @@ img {
 
 .text-dark {
   color: var(--dark-color);
+}
+
+.text-light {
+  color: var(--light-color);
 }
 
 .text-success {

@@ -32,7 +32,7 @@ router.post(
         // check if user exists
         let user = await User.findOne({ email });
         if (user) {
-          res.status(400).json({ msg: "User already exists" });
+          res.status(400).json({ errors: [{ msg: "User already exists" }] });
         }
         // create a new user
         user = new User({

@@ -44,7 +44,7 @@ router.post(
       const card = await newCard.save();
       res.json(card);
     } catch (error) {
-      console.log(error.message);
+      console.log(error);
       res.status(500).json("Server Error");
     }
   }
